@@ -21,12 +21,14 @@ jobs:
           node-version: 20
 
       - name: Install dependencies
-        working-directory: api
-        run: npm install --legacy-peer-deps
+        run: |
+          cd api
+          npm install --legacy-peer-deps
 
       - name: Run tests
-        working-directory: api
-        run: npm test
+        run: |
+          cd api
+          npm test
 
   build:
     runs-on: ubuntu-latest
