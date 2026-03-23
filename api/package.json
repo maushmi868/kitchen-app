@@ -4,9 +4,9 @@
   "description": "Kitchen API with orders, health, and Prometheus /metrics",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "test": "jest",
-    "lint": "eslint . --config eslint.config.mjs"
+  "start": "node server.js",
+  "test": "jest",
+  "lint": "eslint server.js"
   },
   "engines": {
     "node": ">=18"
